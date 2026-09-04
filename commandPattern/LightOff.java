@@ -1,6 +1,6 @@
 package commandPattern;
 
-public class LightOn implements Command{
+public class LightOff implements Command{
   private Light light;
 
   public LightOn(Light light) {
@@ -8,6 +8,6 @@ public class LightOn implements Command{
   }
   @Override
   public String execute() {
-    return light.turnOn();
+    return light.turnOff();
   }
 }
